@@ -1,0 +1,175 @@
+/* BIOGRAPHIES --------------------------------------------- */
+
+
+#biographies article {
+  margin-bottom: 2.5%;
+}
+
+#biographies article a {
+  color: black;
+}
+
+#biographies article a.thumbnail {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 125%;
+  background-color: @light-gray;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#biographies article h2,
+#biographies article h3 {
+  margin: 0;
+}
+
+#biographies article h2 {
+  text-transform: uppercase;
+}
+
+#biographies article h3 {
+  text-align: center;
+  font: italic 1em 'Century Schoolbook', serif;
+}
+
+#biographies .crew article .title-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#biographies .crew article a.thumbnail:hover .title-container {
+  opacity: 1;
+  background-color: rgba(255,255,255,0.75);
+}
+
+#biographies .crew article .title-container h2 {
+  margin-top: 45%;
+}
+
+
+#biographies .crew article {
+  width: 48.75%;
+  float: left;
+  margin-right: 2.5%;
+}
+
+#biographies .crew article:nth-of-type(2n+2) {
+  margin-right: 0;
+}
+
+#biographies .executives .title-container {
+  margin: 1em 0;
+}
+
+
+
+
+
+#biography article h1 { margin: 0; }
+#biography article h2 { font: italic 1em 'Century Schoolbook', serif; }
+#biography article h3 {  font-weight: bold;  }
+
+#biography #pet-corner {
+  display: block;
+  padding: 1em 0;
+}
+
+#biography #pet-corner::before,
+#biography #pet-corner::after {
+  content: '_';
+  display: table;
+  width: 100%;
+  float: none;
+  clear: both;
+  margin: 1em 0;
+  border-bottom: 1px solid @light-gray;
+  color: white;
+}
+
+#biography #featured-image {
+  max-width: 33.33%;
+  height: auto;
+  margin-top: 0.25em;
+}
+
+#biography #pet-corner {
+  display: block;
+  float: none;
+  clear: both;
+}
+
+#biography #pet-thumbnail {
+  position: relative;
+  float: left;
+  padding-top: 33.33%;
+  width: 33.33%;
+  height: 0;
+  margin: 0 2.5% 0 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+#biography #pet-thumbnail img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+
+@media screen and ( min-width: @medium-min-width ) {
+
+  /* BIOGRAPHIES --------------------------------------------- */
+
+  #biographies .executives article,
+  #biographies .crew article {
+    width: 31.66%;
+    float: left;
+    margin-right: 2.5%;
+  }
+
+  #biographies .crew article:nth-of-type(2n+2) {
+    margin-right: 2.5%;
+  }
+
+  #biographies .executives article:nth-of-type(3n+3),
+  #biographies .crew article:nth-of-type(3n+3){
+    margin-right: 0;
+  }
+
+}
+
+
+@media screen and ( min-width: @large-min-width ) {
+
+  /* BIOGRAPHIES --------------------------------------------- */
+
+  #biographies .crew article {
+    width: 23.125%;
+    float: left;
+    margin-right: 2.5%;
+  }
+
+  #biographies .crew article:nth-of-type(3n+3){
+    margin-right: 2.5%;
+  }
+
+  #biographies .crew article:nth-of-type(4n+4){
+    margin-right: 0%;
+  }
+
+}

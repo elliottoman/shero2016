@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'Century Schoolbook';
+	src: url('TeXGyreSchola-Regular.eot');
+	src: url('TeXGyreSchola-Regular.eot?#iefix') format('embedded-opentype'),
+		url('TeXGyreSchola-Regular.woff') format('woff'),
+		url('TeXGyreSchola-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Century Schoolbook';
+	src: url('TeXGyreSchola-Italic.eot');
+	src: url('TeXGyreSchola-Italic.eot?#iefix') format('embedded-opentype'),
+		url('TeXGyreSchola-Italic.woff') format('woff'),
+		url('TeXGyreSchola-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('hinted-Sheroavenir-Bold.eot');
+	src: url('hinted-Sheroavenir-Bold.eot?#iefix') format('embedded-opentype'),
+		url('hinted-Sheroavenir-Bold.woff2') format('woff2'),
+		url('hinted-Sheroavenir-Bold.woff') format('woff'),
+		url('hinted-Sheroavenir-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('hinted-Sheroavenir-Roman.eot');
+	src: url('hinted-Sheroavenir-Roman.eot?#iefix') format('embedded-opentype'),
+		url('hinted-Sheroavenir-Roman.woff2') format('woff2'),
+		url('hinted-Sheroavenir-Roman.woff') format('woff'),
+		url('hinted-Sheroavenir-Roman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

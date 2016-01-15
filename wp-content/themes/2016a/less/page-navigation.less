@@ -1,0 +1,74 @@
+/*  PAGE NAVIGATION --------------------------------------- */
+
+.page-nav ul {
+  list-style-type: none;
+  display: block;
+  clear: both;
+  margin-bottom: 2em;
+}
+
+.page-nav li {
+  display: block;
+  margin: 0 0 1px 0;
+}
+
+.page-nav a {
+  font: 0.85em 'Avenir', sans-serif;
+  text-transform: uppercase;
+  color: black;
+  display: block;
+  padding: 0.5em 1em;
+  background-color: @light-gray;
+}
+
+.page-nav li.current-menu-item a { opacity: 0.5; }
+
+
+#services-menu li a {
+  background-size: 1em;
+  background-position: 1em center;
+  background-repeat: no-repeat;
+  text-indent: 2em;
+}
+
+#services-menu li.current-menu-item a { opacity: 1; }
+
+#services-menu li.services a { background-image: url('assets/service-black.png'); }
+#services-menu li.magento a { background-image: url('assets/magento-black.png'); }
+#services-menu li.wordpress a { background-image: url('assets/wordpress-black.png'); }
+#services-menu li.hourly a { background-image: url('assets/hourly-black.png'); }
+
+#services-menu li.services.current-menu-item a { background-image: url('assets/service-green.png'); }
+#services-menu li.magento.current-menu-item a { background-image: url('assets/magento-orange.png'); }
+#services-menu li.wordpress.current-menu-item a { background-image: url('assets/wordpress-blue.png'); }
+#services-menu li.hourly.current-menu-item a { background-image: url('assets/hourly-maroon.png'); }
+
+@media screen and ( min-width: @medium-min-width ) {
+
+  /*  PAGE NAVIGATION --------------------------------------- */
+
+  .page-nav ul {
+    display: table;
+    list-style-type: none;
+    width: 100%;
+    text-align: right;
+    border-bottom: 1px solid @light-gray;
+  }
+
+  .page-nav li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 0 0 1px;
+  }
+
+  .page-nav ul li:last-of-type { margin-left: 0; }
+
+  #services-menu li a {
+    background-size: 1em;
+    background-position: center 0.5em;
+    background-repeat: no-repeat;
+    text-indent: 0;
+    padding-top: 2em;
+  }
+
+}

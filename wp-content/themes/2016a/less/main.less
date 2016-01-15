@@ -1,0 +1,129 @@
+main article hr {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: @light-gray;
+  margin: 1em 0;
+  border: 0;
+}
+
+main article ul,
+main article ol {
+  margin: 1em 2em;
+}
+
+.alignleft { float: left; margin: 0 1em 1em 0; }
+.alignright { float: right; margin: 0 0 1em 1em; }
+
+.timestamp {
+  display: block;
+  font: 1em 'Avenir', sans-serif;
+  opacity: 0.5;
+  margin-bottom: 1em;
+}
+
+#blog article {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  float: none;
+  clear: both;
+  border-bottom: 1px solid #EEE;
+}
+
+#blog article a.button-link {
+  clear: left;
+}
+
+#blog article h2 {
+  text-align: left;
+  text-transform: none;
+}
+
+#blog article .category-list a {
+  color: #666;
+  font-style: italic;
+  /* text-transform: lowercase; */
+}
+
+#blog article .thumbnail {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 25%;
+  padding-top: 25%;
+  height: 0;
+  float: left;
+  margin-right: 1em;
+  margin-top: 0.25em;
+  background-color: #EEE;
+  background-position: center center;
+  background-size: cover;
+}
+
+#blog article .thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#blog article .summary {
+  display: table;
+  width: 100%;
+  clear: both;
+  float: none;
+}
+
+
+.post-subhead {
+  display: table;
+  width: 100%;
+  padding: 0.5em 0;
+}
+
+.post-subhead .post-meta,
+.post-subhead .comments-count {
+  display: table-cell;
+  vertical-align: top;
+}
+
+
+.post-subhead .comments-count {
+  text-align: right;
+}
+
+
+.post-404 {
+  margin-top: 0.7em;
+}
+
+
+@media screen and (min-width: @medium-min-width) {
+
+  .page-wrap {
+    max-width: 780px;
+  }
+
+  #blog main {
+    width: 65.83%;
+    float: left;
+  }
+
+  #blog article:first-of-type {
+    margin-top: 0.5em;
+  }
+
+}
+
+
+@media screen and ( min-width: @large-min-width ) {
+
+  .page-wrap {
+    max-width: 1080px;
+  }
+
+  #blog main {
+    width: 74.375%;
+  }
+
+}

@@ -1,0 +1,227 @@
+/* SERVICE ICONS ~~~~~~~~~~~~~~~~~~~~~~ */
+
+#service-icons {
+  display: table;
+  float: right;
+  width: 100%;
+}
+
+#service-icons .cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.service-icon {
+  display: block;
+  text-align: right;
+  font-style: italic;
+  /* text-transform: lowercase; */
+  height: 3em;
+  width: 100%;
+}
+
+.service-icon.label {
+  text-align: left;
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: 'Avenir', sans-serif;
+}
+
+.service-icon .icon {
+  display: block;
+  width: 2em;
+  height: 2em;
+  float: right;
+  margin-left: 1em;
+  background-color: #EB2529;
+  background-size: 1.5em;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 1em;
+}
+
+.service-icon.magento .icon { background-image: url('assets/service_magento.png') }
+.service-icon.development .icon { background-image: url('assets/service_development.png') }
+.service-icon.wordpress .icon { background-image: url('assets/service_wordpress.png') }
+
+
+#live-url div {
+  float: right;
+  text-align: right;
+}
+
+#live-url .fa-desktop { display: none; }
+
+
+
+#projects-grid article {
+  display: block;
+  width: 48.75%;
+  float: left;
+  margin-bottom: 2.5%;
+}
+
+
+#projects-grid article:first-of-type {
+  display: block;
+  width: 100%;
+  float: none;
+  clear: both;
+}
+
+
+#projects-grid article:nth-of-type(2n+3) {
+  margin-left: 2.5%;
+}
+
+
+#projects-grid article a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-color: @light-gray;
+  color: white;
+}
+
+#projects-grid article:first-of-type a {
+  padding-top: 50%;
+}
+
+#projects-grid article a span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.05s;
+}
+
+#projects-grid article a:hover {
+  opacity: 1;
+}
+
+#projects-grid article a:hover span {
+  background-color: rgba(0,0,0,0.25);
+}
+
+#projects-grid article a h2 {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 40%;
+  opacity: 0;
+}
+
+#projects-grid article a:hover h2 {
+  opacity: 1;
+}
+
+#projects-grid article a h2::after {
+  content: 'View Project';
+  display: table;
+  border: 1px solid white;
+  padding: 0.5em 1em;
+  margin: 1em auto;
+  text-transform: none;
+}
+
+#projects-grid article a h2::after:hover {
+  background-color: rgba(255,255,255,0.25);
+}
+
+
+#project-page-ctas a {
+  display: block;
+  width: 100%;
+  background-color: @shero-red;
+  color: white;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#project-page-ctas a:nth-of-type(2) {
+  background-color: @dark-gray;
+}
+
+#project-page-ctas a span {
+  display: block;
+  font: 1.5em 'Avenir', sans-serif;
+  padding: 1em;
+}
+
+
+@media screen and ( min-width: @medium-min-width ) {
+
+  /* SERVICE ICONS ~~~~~~~~~~~~~~~~~~~~ */
+
+  #service-icons .cell.icons-container {
+    text-align: right;
+  }
+
+  .service-icon {
+    display: inline-block;
+    height: 2em;
+    width: auto;
+    margin-left: 1em;
+  }
+
+  .service-icon.label {
+    margin-left: 0;
+  }
+
+  #live-url { margin-bottom: 1em; }
+
+  #live-url .fa-desktop { display: inline; }
+  #live-url .fa-mobile { display: none; }
+
+
+
+
+  #project-page-ctas a {
+    width: 48.75%;
+    float: left;
+    text-align: left;
+  }
+
+  #project-page-ctas a:nth-of-type(2) {
+    margin-left: 2.5%;
+  }
+
+}
+
+
+@media screen and ( min-width: @large-min-width ) {
+
+  #projects-grid article {
+    display: block;
+    width: 23.125%;
+    float: left;
+    margin-bottom: 2.5%;
+  }
+
+  #projects-grid article {
+    margin-left: 2.5%;
+  }
+
+  #projects-grid article a h2 {
+    top: 30%;
+  }
+
+  #projects-grid article:first-of-type a h2 {
+    top: 40%;
+  }
+
+  #projects-grid article:first-of-type,
+  #projects-grid article:nth-of-type(4n+2) {
+    margin-left: 0;
+  }
+
+}

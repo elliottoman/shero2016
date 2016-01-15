@@ -1,0 +1,623 @@
+/* LEGACY STYLES ============================================= */
+
+/* Services Page */
+
+.service {
+  display: table;
+  width: 100%;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid @light-gray;
+}
+
+.serv-left {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 1em;
+  width: auto;
+  min-width: 100px;
+}
+
+.serv-right {
+  display: table-cell;
+  vertical-align: top;
+  width: auto;
+}
+
+
+/*  Magento Packages ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.packages-set br { display: none; }
+
+.packages-set .pcol {
+  width: 48.75%;
+  float: left;
+  margin-right: 2.5%;
+  margin-bottom: 1em;
+  font: 1em 'Avenir', sans-serif;
+  text-align: center;
+}
+
+.packages-set .pcol:nth-of-type(2n+2) {
+  margin-right: 0;
+  clear: right;
+}
+
+.packages-set .pcol:nth-of-type(1) {
+  background-color: @shero-blue;
+
+  .amount-large {
+    color: @shero-blue;
+  }
+
+}
+
+.packages-set .pcol:nth-of-type(2) {
+  background-color: @shero-red;
+
+  .amount-large {
+    color: @shero-red;
+  }
+
+}
+
+.packages-set .pcol:nth-of-type(3) {
+  background-color: @shero-orange;
+
+  .amount-large {
+    color: @shero-orange;
+  }
+
+}
+
+.packages-set .pcol:nth-of-type(4) {
+  background-color: @shero-green;
+
+  .amount-large {
+    color: @shero-green;
+  }
+
+}
+
+.packages-set .package-inner {
+  background-color: rgba(255,255,255,0.75);
+  margin: 0 0.25em 1em 0.25em;
+  padding: 0.5em 0;
+}
+
+.packages-set .package-title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.5em 0.25em;
+}
+
+.packages-set .pcol span {
+  display: block;
+  padding: 0.25em 0;
+}
+
+.packages-set .pcol .amount-large {
+  font-size: 2em;
+  padding: 0;
+}
+
+.packages-set .per-month {
+  font: italic 1em 'Century Schoolbook', serif;
+  color: white;
+}
+
+.packages-set a.button-link {
+  margin: 0 auto;
+}
+
+
+.additional-info-content {
+  padding-top: 1em;
+}
+
+
+.accordion-toggle .resource-title {
+  position: relative;
+  text-align: left;
+  font-size: 1.25em;
+  color: @dark-gray;
+}
+
+.accordion-toggle .resource-title::after {
+  content: '+';
+  position: absolute;
+  top: auto;
+  right: 0;
+}
+
+.accordion-toggle {
+  padding: 1em 0;
+  border-bottom: 1px solid @light-gray;
+}
+
+.accordion-toggle:last-of-type {
+  border: 0;
+}
+
+.accordion-content {
+  padding: 1em 0;
+}
+
+
+#plans-table.desktop {
+  display: none;
+}
+
+
+#plans-table.desktop {
+
+  font: 1em 'Avenir', sans-serif;
+
+  br { display: none; }
+
+  p { margin: 0; }
+
+  td {
+    width: 15.625%;
+    margin: 0.25em 1.25% 0.25em 0;
+    padding: 0.5em 0;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+  }
+
+
+
+  td.table-feature {
+    width: 30%;
+    padding-right: 2.5%;
+    text-indent: 0.5em;
+
+    &:hover {
+      background-color: @light-gray;
+    }
+
+  }
+
+
+
+
+  td:nth-of-type(5n+5) {
+    margin-right: 0;
+  }
+
+  td {
+    background-color: @light-gray;
+  }
+
+  td.table-plan,
+  td.table-feature {
+    background-color: white;
+  }
+
+  tr:nth-of-type(even) .table-feature {
+    background-color: @light-gray;
+  }
+
+  td:nth-of-type(5n+2).table-icon,
+  td:nth-of-type(5n+2).table-plan {
+    background-color: @shero-blue;
+  }
+
+  td:nth-of-type(5n+3).table-icon,
+  td:nth-of-type(5n+3).table-icon-orange,
+  td:nth-of-type(5n+3).table-plan {
+    background-color: @shero-red;
+  }
+
+  td:nth-of-type(5n+4).table-icon,
+  td:nth-of-type(5n+4).table-plan {
+    background-color: @shero-orange;
+  }
+
+  td:nth-of-type(5n+5).table-icon,
+  td:nth-of-type(5n+5).table-plan {
+    background-color: @shero-green;
+  }
+
+  .table-packages {
+    width: 100%;
+  }
+
+  td.table-plan {
+    padding: 0;
+    text-align: center;
+
+    span {
+      display: block;
+      padding: 0.25em 0;
+    }
+
+  }
+
+  .table-plan-inner {
+    background-color: rgba(255,255,255,0.5);
+  }
+
+  .table-title {
+    display: block;
+    padding: 0.5em;
+  }
+
+  .amount-small {
+    font-size: 1.5em;
+    padding: 0;
+    color: white;
+  }
+
+  .small-month {
+    font: italic 1em 'Century Schoolbook', serif;
+    margin-top: -1em;
+  }
+
+
+}
+
+
+#plans-table.mobile .packages-set {
+
+  font: 1em 'Avenir', sans-serif;
+  text-align: center;
+
+  .package-mobile {
+    background-color: @light-gray;
+    padding-bottom: 1em;
+  }
+
+  #enterprise {
+    background-color: @shero-blue;
+
+    .amount-large {
+      color: @shero-blue;
+    }
+
+  }
+
+  #plus {
+    background-color: @shero-red;
+
+    .amount-large {
+      color: @shero-red;
+    }
+
+  }
+
+  #standard {
+    background-color: @shero-orange;
+
+    .amount-large {
+      color: @shero-orange;
+    }
+
+  }
+
+  #starter {
+    background-color: @shero-green;
+
+    .amount-large {
+      color: @shero-green;
+    }
+
+  }
+
+  .package-mobile ul {
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+
+    li {
+      display: block;
+      padding: 0.5em 0;
+      background-color: rgba(255,255,255,0.25);
+      color: white;
+      margin-bottom: 1px;
+    }
+
+    li:nth-of-type(even) {
+      background-color: rgba(255,255,255,0.35);
+    }
+
+  }
+
+  .package-inner span {
+    display: block;
+    padding: 0.25em;
+
+    &.amount-large {
+      font-size: 2em;
+    }
+
+    &.per-month {
+      font: italic 1em 'Century Schoolbook', serif;
+      color: black;
+      opacity: 0.5;
+      margin-top: -1em;
+    }
+
+  }
+
+}
+
+
+
+@media screen and ( min-width: @medium-min-width ) {
+
+  .packages-set .pcol {
+    width: 23.125%;
+    margin-right: 2.5%;
+  }
+
+  .packages-set .pcol:nth-of-type(2n+2) {
+    margin-right: 2.5%;
+    clear: none;
+  }
+
+  .packages-set .pcol:nth-of-type(4n+4) {
+    margin-right: 0;
+    clear: right;
+  }
+
+
+  #plans-table.desktop {
+    display: table;
+    width: 100%;
+  }
+
+  #plans-table.mobile {
+    display: none;
+  }
+
+
+
+
+}
+
+
+/* Wordpress Packages ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.support-info {
+
+  .threecol-contain {
+    display: block;
+    width: 100%;
+  }
+
+  .column,
+  .column h3 {
+    text-align: center;
+
+    img {
+      margin: auto;
+      &:hover { opacity: 0.75; }
+    }
+
+  }
+
+  .support-box {
+    display: table;
+    width: 100%;
+    clear: both;
+    float: none;
+    font: 1em 'Avenir', sans-serif;
+    background-color: @light-gray;
+
+    .support-left {
+      display: block;
+      float: left;
+      width: 20%;
+    }
+
+    .support-middle {
+      display: block;
+      float: left;
+      width: 80%;
+    }
+
+    .support-right {
+      display: block;
+      float: none;
+      clear: both;
+      width: 100%;
+    }
+
+    .left-inner {
+      display: block;
+      text-align: center;
+      height: 100%;
+      font-size: 3em;
+      padding: .5em 0;
+    }
+
+    .mid-inner {
+      padding: 1em;
+      border-left: 5px solid white;
+    }
+
+    .right-inner {
+      padding: 1em;
+      border-top: 5px solid white;
+    }
+
+
+  }
+
+  .support-box.two {
+    .color { color: @shero-green; font-weight: bold; }
+    .left-inner { color: @shero-green; }
+  }
+
+  .support-box.three {
+    .color { color: @shero-orange; font-weight: bold; }
+    .left-inner { color: @shero-orange; }
+  }
+
+  .support-box.four {
+    .color { color: @shero-red; font-weight: bold; }
+    .left-inner { color: @shero-red; }
+  }
+
+  .support-box.five {
+    .color { color: @shero-blue; font-weight: bold; }
+    .left-inner { color: @shero-blue; }
+  }
+
+}
+
+
+#wordpress-accordion {
+
+  h3 {
+    font: italic 1.25em 'Century Schoolbook', serif;
+  }
+
+  .accordion-toggle {
+    position: relative;
+    text-align: left;
+    font-size: 1.25em;
+    color: @dark-gray;
+  }
+
+  .accordion-toggle::after {
+    content: '+';
+    position: absolute;
+    top: auto;
+    right: 0;
+  }
+
+}
+
+
+
+
+@media screen and ( min-width: @medium-min-width ) {
+
+
+.support-info {
+
+  .support-box {
+
+      .support-left {
+        display: block;
+        float: left;
+        width: 11.1%;
+      }
+
+      .support-middle {
+        display: block;
+        float: left;
+        width: 55.5%;
+      }
+
+      .support-right {
+        display: block;
+        float: left;
+        clear: right;
+        width: 33.3%;
+      }
+
+      .mid-inner {
+        border-right: 5px solid white;
+      }
+
+      .right-inner {
+        border: 0;
+      }
+
+  }
+
+}
+
+}
+
+
+
+
+
+/* Quote Form ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+.quote-border br,
+.quote-border p {
+  display: none;
+}
+
+.quote-border input[type=text],
+.quote-border input[type=email],
+.quote-border textarea {
+  background-color: @light-gray;
+  color: black;
+  width: 90%;
+  text-indent: 1em;
+  float: right;
+  opacity: 0.5;
+}
+
+.quote-border input[type=text]:focus,
+.quote-border input[type=email]:focus,
+.quote-border textarea:focus {
+  background-color: white;
+  border-bottom: 1px solid @dark-gray;
+  text-indent: 0;
+}
+
+.quote-border textarea:focus {
+  border-top: 1px solid @dark-gray;
+}
+
+.quote-border input[type=submit],
+.quote-border input[type=reset] {
+  display: inline-block;
+  background-color: @shero-red;
+  color: white;
+  padding: 0 1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.quote-border select {
+  width: 90%;
+  float: right;
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid @light-gray;
+}
+
+.quote-border select option {
+  display: block;
+  padding: 0.25em;
+}
+
+.quote-border input[type=reset] {
+  background-color: @light-gray;
+  color: @dark-gray;
+}
+
+td.quote-text,
+td.quote-input {
+  padding-bottom: 0.5em;
+}
+
+td.quote-text {
+  width: 33.33%;
+}
+
+td.quote-input {
+  width: 66.66%;
+}
+
+
+
+
+
+.accordion-toggle:hover {
+  opacity: 0.75;
+}
+

@@ -1,0 +1,55 @@
+#breadcrumbs-container {
+  padding: 0.5em 0;
+}
+
+#breadcrumbs {
+  display: table;
+  width: 80%;
+  float: left;
+}
+
+
+#breadcrumbs ul {
+  list-style-type: none;
+}
+
+#breadcrumbs li {
+  display: inline;
+  font: 1em 'Century Schoolbook', serif;
+  /* text-transform: lowercase; */
+  color: #666;
+}
+
+#breadcrumbs a {
+  color: black;
+  font-style: italic;
+}
+
+#breadcrumbs li::after {
+  content: '»';
+  padding: 0 0.5em;
+}
+
+#breadcrumbs .trail-browse {
+  display: none;
+}
+
+#breadcrumbs .trail-end {
+  color: #EB2529;
+}
+
+/*  PAGINATION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#pagination {
+  display: table;
+  float: right;
+  text-align: right;
+}
+
+#pagination span {
+  display: inline-block;
+}
+
+#pagination span span {
+  display: none;
+}

@@ -1,0 +1,268 @@
+.navmenu {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  float: right;
+  margin: 1em 0 0 0;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.menu-icon {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 0.285em;
+  background: black;
+  top: 0.857em;
+  text-indent: -9999px;
+  transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+  z-index: 12;
+}
+
+.menu-open,
+.menu-close {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2em;
+  height: 2em;
+  z-index: 14;
+  opacity: 0;
+}
+
+.menu-open span,
+.menu-close span {
+  display: none;
+}
+
+.menu-close {
+  display: none;
+}
+
+#menu:target .menu-open {
+  display: none;
+}
+
+#menu:target .menu-close {
+  display: block;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 100%;
+  padding-top: 0.285em;
+  background: black;
+  content: "_";
+  transition: top 0.25s, bottom 0.25s;
+  -webkit-transition: top 0.25s, bottom 0.25s;
+}
+
+.menu-icon::before {
+  top: 0.857em;
+}
+
+.menu-icon::after {
+  bottom: 0.857em;
+}
+
+#menu:target .menu-icon {
+  background-color: white;
+}
+
+#menu:target .menu-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#menu:target .menu-icon::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+#menu:target .menu-icon::before,
+#menu:target .menu-icon::after {
+  transition: transform 0.5s 1s, top 0.25s, bottom 0.25s;
+  -webkit-transition: transform 0.5s 1s, top 0.25s, bottom 0.25s;
+}
+
+
+
+.navmenu ul {
+  position: fixed;
+  display: block;
+  list-style-type: none;
+  width: 95%;
+  padding: 0 2.5%;
+  max-height: 0;
+  left: 0;
+  top: 4em;
+  text-align: left;
+  transition: all 0.25s linear;
+  background-color: white;
+  overflow: hidden;
+  z-index: 13;
+}
+
+.navmenu ul li {
+  display: block;
+  padding: 0.5em 0;
+}
+
+.navmenu ul li a {
+  color: black;
+  text-decoration: none;
+  /* text-transform: lowercase; */
+  font: 2em 'Avenir', sans-serif;
+}
+
+#menu:target ul {
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+.navmenu ul .search-icon span span {
+  display: none;
+}
+
+
+
+a.nav-cta {
+  position: absolute;
+  right: 3em;
+  display: inline-block;
+  width: 7em;
+  text-align: center;
+  font: 1em 'Avenir', sans-serif;
+  color: white;
+  height: 1.65em;
+  padding: 0.35em 1em 0 1em;
+  background-color: @shero-red;
+  text-transform: uppercase;
+  transition: all 0.25s linear;
+  opacity: 1;
+  top: 0;
+}
+
+a.nav-cta:hover {
+  opacity: 0.75;
+}
+
+#menu:target a.nav-cta {
+  opacity: 0;
+  top: -1em;
+}
+
+#logo {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0.175em;
+}
+
+#logo a {
+  font: 2.25em 'Avenir', sans-serif;
+  text-transform: lowercase;
+  letter-spacing: .1em;
+  color: black;
+}
+
+
+#logo .logo-left,
+#logo .logo-right {
+  display: block;
+  float: left;
+  width: 48%;
+  height: 0.285em;
+  margin-top: -0.1em;
+}
+
+
+#logo .logo-left {
+  background: @shero-red;
+}
+
+#logo .logo-right {
+  background: #333;
+}
+
+
+#search {
+  position: fixed;
+  display: block;
+  background-color: black;
+  top: 4em;
+  left: 0;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  -webkit-transition: max-height 0.5s;
+}
+
+#search:target {
+  max-height: 100vh;
+}
+
+
+
+#search input[type=text] {
+  width: 600px;
+  max-width: 85%;
+}
+
+#search button {
+  float: right;
+  cursor: pointer;
+}
+
+#search .fa-search { display: none;}
+
+@media screen and (min-width: @medium-min-width) {
+  .navmenu ul {
+    position: absolute;
+    display: block;
+    list-style-type: none;
+    width: 100vw;
+    right: 3em;
+    left: auto;
+    min-height: 0;
+    background-color: transparent;
+    padding: 0;
+    top: -0.25em;
+    text-align: right;
+    opacity: 0;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+  }
+
+  .navmenu ul li {
+    display: inline-block;
+    padding-left: 1em;
+  }
+
+  .navmenu ul li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 1em 'Avenir', sans-serif;
+  }
+
+  #menu:target ul {
+    top: -.25em;
+    opacity: 1;
+    max-height: auto;
+    min-height: auto;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+  }
+}
